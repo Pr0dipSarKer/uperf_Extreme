@@ -1,19 +1,19 @@
 {
   "meta": {
-    "name": "platform[yy.mm.dd]",
+    "name": "Prodip's Passion Config]",
     "author": "author@community"
   },
   "modules": {
     "switcher": {
-      "switchInode": "/sdcard/Android/yc/uperf/cur_powermode.txt",
-      "perapp": "/sdcard/Android/yc/uperf/perapp_powermode.txt",
+      "switchInode": "/sdcard/pU.txt",
+      "perapp": "/sdcard/pU.txt",
       "hintDuration": {
         "idle": 0.0,
-        "touch": 4.0,
-        "trigger": 0.03,
-        "gesture": 0.1,
-        "switch": 0.4,
-        "junk": 0.06
+        "touch": 6.0,
+        "trigger": 2.03,
+        "gesture": 3.0,
+        "switch": 5.5,
+        "junk": 4.0
       }
     },
     "atrace": {
@@ -23,7 +23,7 @@
       "level": "info"
     },
     "input": {
-      "enable": true,
+      "enable": false,
       "swipeThd": 0.03,
       "gestureThdX": 0.03,
       "gestureThdY": 0.03,
@@ -31,12 +31,31 @@
       "holdEnterTime": 1.0
     },
     "sfanalysis": {
-      "enable": true,
-      "renderIdleSlackTime": 0.2
+      "enable": false,
+      "renderIdleSlackTime": 2.0
     },
     "cpu": {
-      "enable": true,
-      "powerModel": []
+      "enable": false,
+      "powerModel": [
+        {
+          "efficiency": 100, 
+          "nr": 6, 
+          "typicalPower": 0.36, 
+          "typicalFreq": 1.8, 
+          "sweetFreq": 1.4, 
+          "plainFreq": 1.2, 
+          "freeFreq": 0.6
+        }, 
+        {
+          "efficiency": 230, 
+          "nr": 2, 
+          "typicalPower": 1.3, 
+          "typicalFreq": 2.0, 
+          "sweetFreq": 1.7, 
+          "plainFreq": 1.0, 
+          "freeFreq": 0.7
+        }
+      ]
     },
     "sysfs": {
       "enable": true,
